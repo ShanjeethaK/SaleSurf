@@ -27,6 +27,10 @@ $(document).ready(function() {
                     (function (i) {
                         console.log(i);
                         var data = item_response.data[i];
+                        
+                        // It seems unnecessary to store all of these values from 'var data' onto 'itemInfo'
+                        // It looks like you just use the itemInfo's different variables at the bottom
+                        // when you could just use data.sale_price or data.store_name instead.
                         itemInfo.store_name = data.merchant;
 //                        console.log(itemInfo.store_name);
 
