@@ -6,6 +6,8 @@ __author__ = 'shanjee'
 
 
 class UserProfileForm(UserCreationForm):
+    # Just to reiterate, if you use a DateField in your UserProfile model for birthday
+    # you can remove all of this code
     month = [('January', 'January'), ('February', 'February'), ('March', 'March'), ('April', 'April'), ('May', 'May'), ('June', 'June'), ('July','July'), ('August', 'August'), ('September', 'September'), ('October', 'October'), ('November', 'November'), ('December', 'December')]
 
     day = []
