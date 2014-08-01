@@ -17,6 +17,8 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+            // I hope you're not actually using php and you just copy and pasted this from somewhere....
+            // This can be done with Django and Python!!!!!
             $.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
