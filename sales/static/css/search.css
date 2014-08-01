@@ -1,0 +1,123 @@
+html {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    clear:both;
+    position: relative;
+    width: 100%;
+}
+
+footer {
+    clear:both;
+}
+
+.container {
+    margin-top: -12px;
+}
+
+.searchSpot {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#searchBox {
+    margin-bottom: 40px;
+}
+
+.itemInformation {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+}
+
+.eachItemInfo {
+    float: left;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.eachItemInfo img {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eachItemInfo li:hover {
+    opacity: 0.8;
+}
+
+ul.eachItemInfo {
+ list-style-type: none;
+ margin: 20px;
+ padding: 0;
+ text-align: center;
+}
+
+ul.eachItemInfo li {
+ display: inline-block;
+ height: 200px;
+ margin: 0 1em 1em 0;
+ position: relative;
+ width: 100%;
+}
+
+span.text-content {
+ background: rgba(0,0,0,0.2);
+ color: white;
+ size: 10px;
+ cursor: pointer;
+ display: table;
+ height: 210px;
+ left: 0;
+ position: absolute;
+ top: 0;
+ width: 210px;
+ opacity: 0;
+ -webkit-transition: opacity 500ms;
+ -moz-transition: opacity 500ms;
+ -o-transition: opacity 500ms;
+ transition: opacity 500ms;
+}
+
+ul.eachItemInfo li:hover span.text-content {
+ opacity: 1;
+}
+
+span.text-content span {
+ display: table-cell;
+ text-align: center;
+ vertical-align: middle;
+}
+
+.resultPic:hover {
+    opacity: 0.2;
+}
+
+.searchButton {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 15px;
+    /*margin-top: 15px;*/
+    margin: 15px;
+    color: white;
+    border: 0;
+}
+
+.searchButton:hover {
+    background-color: rgba(254, 209, 54, 0.4);
+    color: #000000;
+}
+
+.searchButton:focus {
+    outline: 0;
+}
