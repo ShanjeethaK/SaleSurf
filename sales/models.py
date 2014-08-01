@@ -16,6 +16,9 @@ class UserProfile(AbstractUser):
     for num in range(1914, 2015):
         year.append( (num, num) )
 
+    # You could use a DateTimeField instead, which would handle all of the different choices
+    # Would eliminate all of the code above as well
+    # You could also just call it 'birthday', no need to preprend 'user'
     user_birthday_month = models.CharField(max_length=10, choices=month, null=True)
     user_birthday_day = models.SmallIntegerField(max_length=2, choices=day, null=True)
     user_birthday_year = models.SmallIntegerField(max_length=4, choices=year, null=True)
@@ -30,6 +33,7 @@ class Item(models.Model):
     sale_price = models.DecimalField(max_digits=5, decimal_places=2)
     currency = models.CharField(max_length=5)
     store_name =  models.CharField(max_length=50)
+    # Should be named store_given_url to keep consistent with python naming
     store_givenUrl = models.URLField(null=True)
     store_url = models.URLField()
     item_img = models.URLField(null=True)
